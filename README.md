@@ -14,8 +14,23 @@ pip install uv
 cd .. # 返回上级目录
 uv init lang_graph_demo # 此时会生成一个pyproject.toml
 ```
-4. 添加相应的依赖
+4. 在pyproject.toml中添加相应的依赖
+```toml
+[project]
+name = "lang-graph-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "flask",
+    "langchain",
+    "langchain-openai",
+    "langchain-core",
+    "langgraph"
+]
 
+```
 
 5. 安装所需的包
 ```shell
